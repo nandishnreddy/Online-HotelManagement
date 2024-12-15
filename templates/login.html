@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        /* Paste the CSS code here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .centered-heading {
+            text-align: center;
+        }
+
+
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form action="{{ url_for('login') }}" method="post">
+        <div class="centered-heading">
+            <h1>HOTEL AATHITYAM </h1>
+        </div>
+        <label for="FullName">Email:</label>
+        <input type="text" id="Email" name="Email">
+        <br>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="Password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

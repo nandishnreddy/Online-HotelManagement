@@ -1,0 +1,89 @@
+
+  section {
+      border: 2px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+  }
+  
+  section img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+  }
+  
+  section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  
+  section p {
+      font-size: 18px;
+  }
+  .Amenities_amenitiesList__content__4jt5A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Amenities_amenitiesList__image__paintStroke__e_IWp {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #f06, #0099f0);
+    border-radius: 50%;
+    animation: paintStroke 2s ease-in-out infinite;
+  }
+  
+  @keyframes paintStroke {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .Amenities_amenitiesList__image__SfJ6D {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .Amenities_amenitiesList__details__pDXqP {
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .Amenities_amenitiesList__header__klLvh {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .Amenities_amenitiesList__amenities__Lbh2G {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Amenities_amenitiesList__amenities__Lbh2G li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Amenities_amenitiesList__amenities__Lbh2G li i {
+    margin-right: 10px;
+  }
+  
+  .Amenities_amenitiesList__amenities__Lbh2G li span {
+    display: block;
+  }

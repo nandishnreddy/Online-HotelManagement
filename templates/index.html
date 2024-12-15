@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY HOTEL MANAGEMENT AATITHYAM </title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="p-3 text-bg-dark">
+    <div class="container col-xxl-8 px-4 pt-5">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="/amenities" class="nav-link px-2 text-white">Amenities</a></li>
+            <li><a href="/contact_us" class="nav-link px-2 text-white">Contact Us</a></li>
+            <li><a href="/signup" class="nav-link px-2 text-white">Sign-up</a></li>
+            <li><a href="/login" class="nav-link px-2 text-white">Login</a></li>
+            <li><a href="/cusines" class="nav-link px-2 text-white">Cusines</a></li>
+            <li><a href="{{ url_for('about') }}" class="nav-link px-2 text-white">About</a></li>
+            <li><a href="/staff_details" class="nav-link px-2 text-white">Staff Details</a></li>
+            <li><a href="/hotel_branch" class="nav-link px-2 text-white">Our Branches</a></li>
+            <li><a href="/rooms" class="nav-link px-2 text-white">Rooms</a></li>
+            <li><a href="/cancel_booking" class="nav-link px-2 text-white">Cancel Room booking</a></li>
+            
+            
+          </div>
+      </div>
+  </header>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">WELCOME TO HOTEL AATHITHYAM </h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Hotel Aathithyam" is a luxurious accommodation facility located in a serene and picturesque setting, ideal for both leisure and business travelers. Offering an amalgamation of comfort, elegance, and modern amenities, this hotel aims to provide a memorable and delightful stay experience for its guests. With its warm and welcoming ambiance, spacious rooms, and personalized services, the hotel caters to the needs and preferences of every guest.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="{{ url_for('our_rooms') }}">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" fdprocessedid="6ac7bej">Our Rooms</button>
+        </a>
+        <a href="{{ url_for('book_room') }}">
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="adrajh">Book Room</button>
+        </a>
+      </div>
+    </div>
+    
+
+    <div class="row g-4">
+      <div class="col-md-6">
+          <img src="static/img/ai.jpg.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
+      </div>
+      <div class="col-md-6">
+          <img src="static/img/ai1.jpg.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
+      </div>
+  </div>
+
+
+  <footer class="pt-5 pb-4 mt-5 text-white" style="background-image: linear-gradient(to right, #2c3e50, #3498db);">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Connect with us on social media:</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/yourpage" class="text-white">Facebook</a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/yourpage" class="text-white">Instagram</a></li>
+                    <li class="list-inline-item"><a href="https://www.twitter.com/yourpage" class="text-white">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <p>Contact us:</p>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-envelope me-2"></i><a href=":hotelaathithyam.helpdesk@gmail.comm" class="text-white">hotelaathithyam.helpdesk@gmail.com</a></li>
+                    <li><i class="bi bi-telephone me-2"></i>987-654-3210</li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 MY HOTEL MANAGEMENT AATITHYAM. All Rights Reserved.</p>
+        <p>Designed by Group of Hotel Aathithyam</p>
+    </div>
+</footer>
+
+
+  
+ 
+
+  
+  
+  
+
+  
+
+  
+</body>
+</html>

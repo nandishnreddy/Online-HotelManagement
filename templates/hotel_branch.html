@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Rooms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://media.istockphoto.com/id/487042276/photo/hotel-sign.webp?b=1&s=170667a&w=0&k=20&c=TpjhgbKLnlKzHNBtM-2A3fn3KG37e8tTGKPPWZJR5g4=");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #00a7e1; /* Blue color */
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        th:nth-child(1),
+        td:nth-child(1) {
+            min-width: 100px;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            min-width: 120px;
+        }
+
+        th:nth-child(3),
+        td:nth-child(3) {
+            min-width: 180px;
+        }
+
+        th:nth-child(4),
+        td:nth-child(4) {
+            min-width: 120px;
+        }
+
+        th:nth-child(5),
+        td:nth-child(5) {
+            min-width: 100px;
+        }
+        .centered-heading {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="centered-heading">
+        <h1> HOTEL AATHITHYAM </h1>
+        <h2> OUR BRANCHES </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Branch Name</th>
+                <th>Branch loaction</th>
+                <th>Branch Address</th>
+                <th>Branch Contact Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row['branch_name'] }}</td>
+                <td>{{ row['branch_location'] }}</td>
+                <td>{{ row['branch_address'] }}</td>
+                <td>{{ row['branch_phone_number'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
